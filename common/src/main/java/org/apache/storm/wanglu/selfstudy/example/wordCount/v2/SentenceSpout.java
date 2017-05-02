@@ -60,7 +60,7 @@ public class SentenceSpout extends BaseRichSpout {
                 taskId,
                 msgId,
                 JSONObject.toJSON(values)));
-        Utils.waitForMillis(1);
+        Utils.waitForMillis(100);
     }
 
     public void ack(Object msgId) {
